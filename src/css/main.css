@@ -1,0 +1,42 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{display: block; height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+body {
+	padding: 0 40px;
+	background-color: var(--default-black);
+	font-family: Roboto, 'Noto Sans CJK TC', 'Noto Sans TC', 'Noto Sans CJK', sans-serif;
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+main {
+	margin: 32px 0 0;
+	padding: 80px 0;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+footer {
+	display: flex;
+		align-items: center;
+		justify-content: center;
+	padding: 56px 0;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+footer > svg {
+	width: 16px;
+	height: 16px;
+	margin: 0 8px 0 7px;
+	stroke: white;
+}
