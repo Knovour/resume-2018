@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel serve watch",
     "serve": "npx polymer serve",
+    "build": "npx polymer build",
     "watch": "sleep 5; browser-sync start --config bs-config.js"
   },
   "author": "",
