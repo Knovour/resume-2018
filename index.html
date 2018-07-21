@@ -4,9 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Resume</title>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400|Roboto:300,400,500" rel="stylesheet">
-	<link rel="stylesheet" href="./src/css/variables.css">
+	<title>Knovour's Resume</title>
+
+	<meta name="author" content="Knovour">
+	<meta name="description" content="Knovour 的簡歷，含專長、Blog 網址、Github 網址等等" />
+
+	<meta property="og:title" content="Knovour's Resume" />
+	<meta property="og:type" content="page" />
+	<meta property="og:url" content="https://resume.knovour.ninja" />
+	<meta property="og:site_name" content="Knovour's Resume">
+	<meta property="og:description" content="Knovour 的簡歷，含專長、Blog 網址、Github 網址等等" />
+
+	<link rel="shortcut icon" href="./src/assets/favicon.png">
+	<link rel="apple-touch-icon" href="./src/assets/favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./src/assets/favicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./src/assets/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400,500" rel="stylesheet">
 	<link rel="stylesheet" href="./src/css/main.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -15,6 +29,10 @@
 	<custom-style>
 		<style>
 			:root {
+				--green-1: #F9F9F9;
+				--green-2: #CFD8DC;
+				--green-3: #90A4AE;
+
 				--h1: {
 					margin: 0;
 					font-size: 60px;
@@ -22,10 +40,30 @@
 					letter-spacing: 2px;
 				}
 
-				--grid: {
-					display: grid;
-						grid-template-columns: repeat(2, 1fr);
-						grid-gap: 48px;
+				--h1-1120: {
+					font-size: 48px;
+				}
+			}
+
+			@media (max-width: 1120px) {
+				:root {
+					--h1: {
+						margin: 0;
+						font-size: 48px;
+						font-weight: 500;
+						letter-spacing: 2px;
+					}
+				}
+			}
+
+			@media (max-width: 620px) {
+				:root {
+					--h1: {
+						margin: 0;
+						font-size: 40px;
+						font-weight: 500;
+						letter-spacing: 2px;
+					}
 				}
 			}
 		</style>
@@ -38,12 +76,10 @@
 	<div id="app">
 		<basic-profile></basic-profile>
 		<main>
-			<div class="container">
-				<company-list></company-list>
-			</div>
+			<company-list></company-list>
 		</main>
+		<footer>Made with <i data-feather="heart"></i> by Polymer 3</footer>
 	</div>
-	<footer>Made with <i data-feather="heart"></i> by Polymer 3</footer>
 	<script>feather.replace()</script>
 </body>
 </html>

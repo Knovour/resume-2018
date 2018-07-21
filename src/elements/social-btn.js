@@ -24,25 +24,54 @@ class SocialBtn extends PolymerElement {
 				a {
 					display: flex;
 						align-items: center;
-					width: 160px;
-					height: 40px;
+					width: 184px;
+					height: 64px;
+					border: 4px solid var(--green-2);
+						border-radius: 4px;
+					padding: 0 24px;
 					box-sizing: border-box;
-					border-radius: 2px;
-					padding: 0 16px;
 					background-color: white;
 					text-decoration: none;
-					color: var(--default-black);
+					color: var(--green-3);
 					line-height: 10%;
+					font-size: 18px;
+					font-weight: 500;
 
 					transition: all 120ms ease;
 				}
 
-				a:hover {
-					background-color: var(--default-gray);
-					color: white;
-				}
+				a:hover { background-color: var(--green-2); }
 
 				.icon { padding-right: 8px; }
+				.icon > svg { width: 24px; height: 24px; }
+
+				@media (max-width: 1120px) {
+					a {
+						width: 160px;
+						height: 56px;
+						padding: 0 16px;
+						font-size: 16px;
+					}
+
+					.icon > svg { width: 20px; height: 20px; }
+				}
+
+				@media (max-width: 980px) {
+					a {
+						width: 144px;
+						height: 40px;
+						border-width: 2px;
+						font-size: 14px;
+					}
+				}
+
+				@media (max-width: 480px) {
+					a {
+						width: 136px;
+						height: 36px;
+						padding: 0 6px;
+					}
+				}
 			</style>
 
 			<a href="[[link]]" title="" target="_blank">

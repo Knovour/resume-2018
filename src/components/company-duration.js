@@ -12,9 +12,7 @@ class CompanyDuration extends PolymerElement {
 	static get template () {
 		return html`
 			<style>
-				:host {
-					display: block;
-				}
+				:host { display: block; }
 			</style>
 
 			<company-title from="[[duration.from]]" to="[[duration.to]]">[[name]]</company-title>

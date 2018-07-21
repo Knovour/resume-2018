@@ -21,6 +21,12 @@ class AbilityCheck extends PolymerElement {
 				}
 
 				.icon { padding-right: 8px; }
+
+				@media (max-width: 1120px) {
+					:host {
+						font-size: 18px;
+					}
+				}
 			</style>
 
 			<slot></slot>
