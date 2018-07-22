@@ -148,6 +148,7 @@ class CompanyList extends PolymerElement {
 				}
 
 				@media (max-width: 480px) {
+					my-works + my-works { margin-top: 64px; }
 					[role="gridcell"] { padding-right: 16px; }
 				}
 			</style>

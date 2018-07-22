@@ -84,6 +84,11 @@ class CompanyTitle extends PolymerElement {
 					.date-start { margin-right:8px; }
 					.date-end { margin-left:8px; }
 				}
+
+				@media (max-width: 480px) {
+					:host { margin-bottom: 32px; }
+					.date { font-size: 18px;}
+				}
 			</style>
 
 			<h1><slot></slot></h1>
