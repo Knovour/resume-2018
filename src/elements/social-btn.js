@@ -67,7 +67,7 @@ class SocialBtn extends PolymerElement {
 
 				@media (max-width: 480px) {
 					a {
-						width: 136px;
+						width: 100%;
 						height: 36px;
 						padding: 0 6px;
 					}

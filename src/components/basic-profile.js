@@ -52,7 +52,7 @@ class BasicProfile extends PolymerElement {
 				ability-check + ability-check { padding-left: 16px; }
 
 				.info > .graduated {
-					margin-bottom: 8px;
+					margin: 24px 0 8px;
 					font-size: 24px;
 				}
 
@@ -139,21 +139,59 @@ class BasicProfile extends PolymerElement {
 					.info > h2 { font-size: 24px; }
 				}
 
+				@media (min-width: 481px) {
+					.avatar > ._mobile-visible { display: none; }
+				}
+
 				@media (max-width: 480px) {
 					:host {
-						grid-template-rows: 80px auto auto;
-						padding: 0 16px 16px;
+						grid-template-rows: 56px auto auto;
+						padding: 0 16px 48px;
+					}
+
+					.avatar {
+						display: flex;
+							align-items: center;
+					}
+
+					.avatar > img {
+						margin-right: 16px;
+					}
+
+					.avatar .name {
+						font-size: 28px;
+						font-weight: 500;
+					}
+
+					.avatar title {
+						font-size: 18px;
+						font-weight: 400;
+					}
+
+					.info > h1,
+					.info > h2 { display: none; }
+
+					.info > .graduated { margin-top: 0; }
+
+					.links {
+						display: grid;
+							grid-template-columns: repeat(2, 1fr);
+							grid-gap: 8px;
 					}
 
 					social-btn {
-						margin-right: 8px;
-						margin-bottom: 8px;
+						margin-right: 0;
+						margin-bottom: 0;
 					}
 				}
 			</style>
 
 			<div class="avatar">
 				<img src="/src/assets/avatar2.png" alt=""/>
+				<div class="_mobile-visible">
+					<div class="name">Knovour Zheng</div>
+					<div class=title">Frontend Developer</div>
+				</div>
 			</div>
 			<div class="info">
 				<h1>Knovour Zheng<small>鄭竣鴻</small></h1>
