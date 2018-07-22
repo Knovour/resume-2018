@@ -146,7 +146,7 @@ class BasicProfile extends PolymerElement {
 				@media (max-width: 480px) {
 					:host {
 						grid-template-rows: 56px auto auto;
-						padding: 0 16px 48px;
+						padding: 0 16px 64px;
 					}
 
 					.avatar {

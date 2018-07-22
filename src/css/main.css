@@ -39,6 +39,7 @@ body {
 }
 
 main {
+	min-height: 100vh;
 	border: 8px solid var(--green-2);
 		border-radius: 4px;
 	padding: 104px 72px 80px;
