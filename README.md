@@ -6,4 +6,4 @@ The old version: [https://github.com/Knovour/myresume](https://github.com/Knovou
 
 Made by Polymer 3
 
-> I forgot the webp file only work in Chrome. So...¯\\_(ツ)_/¯
+> I forgot the webp file only work in Chrome. So...¯\\\_(ツ)\_/¯
