@@ -2,8 +2,7 @@
 	"npm": true,
 	"moduleResolution": "node",
   "builds": [{
-    "js": { "minify": true },
-    "css": { "minify": true },
-    "html": { "minify": true }
+    "preset": "es6-bundled",
+    "addServiceWorker": false
   }]
 }

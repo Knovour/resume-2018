@@ -18,34 +18,33 @@ class BasicProfile extends PolymerElement {
 					height: 400px;
 				}
 
-				.avatar {
-					grid-area: avatar;
-					padding-top: 8px;
-				}
+				.avatar { grid-area: avatar; }
+				.info { grid-area: info; }
+				.links { grid-area: links; }
 
 				.avatar > img {
 					width: 100%;
 					height: auto;
+					margin-top: 8px;
 					border-radius: 50%;
 				}
 
-				.info { grid-area: info; }
-
 				.info > h1,
-				.info > h2 { letter-spacing: 2px; }
+				.info > h2 {
+					letter-spacing: 2px;
+					font-weight: 400;
+				}
 
 				.info > h1 { @apply --h1; }
 
 				.info > h1 > small {
 					padding-left: 22px;
 					font-size: 40px;
-					font-weight: 400;
 				}
 
 				.info > h2 {
 					margin: -4px 0 0;
 					font-size: 32px;
-					font-weight: 400;
 				}
 
 				.info > .abilities { margin: 0; }
@@ -59,7 +58,6 @@ class BasicProfile extends PolymerElement {
 				.links {
 					display: flex;
 						justify-content: flex-end;
-					grid-area: links;
 					padding-right: 8px;
 					transform: translateY(calc(50% + 4px));
 				}
@@ -77,7 +75,7 @@ class BasicProfile extends PolymerElement {
 						height: 320px;
 					}
 
-					.avatar { padding-top: 0; }
+					.avatar > img { margin-top: 0; }
 
 					.info > h1 > small {
 						padding-left: 20px;
@@ -154,9 +152,7 @@ class BasicProfile extends PolymerElement {
 							align-items: center;
 					}
 
-					.avatar > img {
-						margin-right: 16px;
-					}
+					.avatar > img { margin-right: 16px; }
 
 					.avatar .name {
 						font-size: 28px;
@@ -190,7 +186,7 @@ class BasicProfile extends PolymerElement {
 				<img src="/src/assets/avatar2.png" alt=""/>
 				<div class="_mobile-visible">
 					<div class="name">Knovour Zheng</div>
-					<div class=title">Frontend Developer</div>
+					<div class="title">Frontend Developer</div>
 				</div>
 			</div>
 			<div class="info">

@@ -40,8 +40,6 @@ class SocialBtn extends PolymerElement {
 					transition: all 120ms ease;
 				}
 
-				a:hover { background-color: var(--green-2); }
-
 				.icon { padding-right: 8px; }
 				.icon > svg { width: 24px; height: 24px; }
 
@@ -63,6 +61,10 @@ class SocialBtn extends PolymerElement {
 						border-width: 2px;
 						font-size: 14px;
 					}
+				}
+
+				@media (min-width: 769px) {
+					a:hover { background-color: var(--green-2); }
 				}
 
 				@media (max-width: 480px) {

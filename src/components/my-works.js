@@ -1,7 +1,7 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element'
 import '../elements/company-title'
 
-class CompanyDuration extends PolymerElement {
+class MyWorks extends PolymerElement {
 	static get properties () {
 		return {
 			duration: Object,
@@ -21,4 +21,4 @@ class CompanyDuration extends PolymerElement {
 	}
 }
 
-customElements.define('company-duration', CompanyDuration)
+customElements.define('my-works', MyWorks)
