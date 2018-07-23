@@ -64,7 +64,10 @@ class WorkCard extends PolymerElement {
 
 			<h3>[[name]]</h3>
 			<template is="dom-if" if="[[img]]">
-				<img src="./src/assets/[[img]].webp" alt=""/>
+				<picture>
+					<source srcset="./src/assets/[[img]].jpg" type="image/jpeg">
+					<img src="./src/assets/[[img]].webp" alt=""/>
+				</picture>
 			</template>
 			<template is="dom-repeat" items="[[contents]]">
 				<template is="dom-if" if="[[!isArray(item)]]">

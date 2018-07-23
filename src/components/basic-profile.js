@@ -183,7 +183,7 @@ class BasicProfile extends PolymerElement {
 			</style>
 
 			<div class="avatar">
-				<img src="/src/assets/avatar2.png" alt=""/>
+				<img src="/src/assets/avatar.png" alt=""/>
 				<div class="_mobile-visible">
 					<div class="name">Knovour Zheng</div>
 					<div class="title">Frontend Developer</div>
